@@ -41,6 +41,7 @@
         <p class="lead">
           As a wealth management intern at Main Street Financial Group, I supported portfolio analysis and investment research across stocks, ETFs, and mutual funds. I’m now looking for opportunities in finance.
         </p>
+        <button type="button" class="pill pill-outline" id="more-open" aria-haspopup="dialog">More Info<span class="arrow">+</span></button>
       </div>
 
       <div class="hero-right">
@@ -51,6 +52,46 @@
 
     </div>
   </main>
+
+  <dialog class="more" id="more" aria-labelledby="more-title">
+    <div class="more-head">
+      <h2 id="more-title">More About Me</h2>
+      <button type="button" class="more-close" id="more-close" aria-label="Close">×</button>
+    </div>
+
+    <div class="more-body" tabindex="0">
+      <h3>Where I am now</h3>
+      <p>I’m from Long Island, New York, and I’m studying Business Management with a Finance specialization at Stony Brook University. I expect to graduate in January 2027 and currently have a 3.54 GPA.</p>
+
+      <h3>How I got here</h3>
+      <p>I attended St. Anthony’s High School in Melville, where I was part of the St. Anthony’s Leadership Team and rowed varsity crew.</p>
+      <p>I started working at Dick’s Sporting Goods in October 2020. As a retail associate, I processed and reconciled incoming inventory, supported loss prevention, and helped customers make purchasing decisions.</p>
+      <p>From June 2022 to October 2024, I was an Operations Lead at Open Minded Organics. I directed daily production in a regulated manufacturing environment, managed inventory across thousands of finished goods, led cross-functional projects, and made workflow improvements that reduced overhead and improved throughput.</p>
+      <p>Since May 2024, I’ve also worked in event operations at McKenna Events, coordinating setup and breakdown with the team.</p>
+
+      <h3>My finance experience</h3>
+      <p>In June and July 2026, I interned in wealth management at Main Street Financial Group. I entered and verified client portfolio data in YCharts, supported analysis and research on stocks, ETFs, and mutual funds, gained exposure to asset allocation and risk management, and helped prepare portfolio reporting for advisor review.</p>
+
+      <h3>Skills</h3>
+      <ul>
+        <li><strong>Analysis:</strong> portfolio analysis, investment research, financial statement analysis</li>
+        <li><strong>Modeling and valuation:</strong> financial modeling in Excel, DCF valuation</li>
+        <li><strong>Working with people:</strong> interpersonal skills, team leadership, customer service</li>
+        <li><strong>Operations:</strong> inventory management, workflow improvement, project coordination</li>
+      </ul>
+
+      <h3>What’s next</h3>
+      <p>I’m looking for opportunities in finance. If you think I could be a fit, <a href="/contact/">get in touch</a>.</p>
+    </div>
+  </dialog>
+
+  <script>
+    const more = document.getElementById('more');
+    document.getElementById('more-open').addEventListener('click', () => more.showModal());
+    document.getElementById('more-close').addEventListener('click', () => more.close());
+    // clicking the dimmed background closes it
+    more.addEventListener('click', e => { if (e.target === more) more.close(); });
+  </script>
 
   <footer class="case-footer">
     <div class="wrap case-foot">
