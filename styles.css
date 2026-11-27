@@ -238,6 +238,7 @@ body.warm{ background:var(--bg-warm); color:var(--ink); }
 .warm .entry p, .warm .entry li{ color:rgba(18,18,18,.76); }
 .warm .chips li{ background:var(--light); border-color:rgba(18,18,18,.1); }
 .case.warm a.pill{ color:#fff; }
+.case.warm a.pill-outline{ color:var(--ink); }
 .warm .site-header a{ color:var(--light); }
 
 .contact-detail{ margin-top:28px; font-size:14px; line-height:1.9; opacity:.75; }
