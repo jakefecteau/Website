@@ -232,6 +232,14 @@ body.case{ display:flex; flex-direction:column; min-height:100vh; height:auto; }
 .entry ul{ margin:8px 0 0; padding-left:18px; }
 .chips{ display:flex; flex-wrap:wrap; gap:10px; margin:0; padding:0; list-style:none; }
 .chips li{ padding:8px 13px; border-radius:999px; font-size:12px; background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.1); }
+/* warm theme, matching the home page */
+body.warm{ background:var(--bg-warm); color:var(--ink); }
+.warm .resume-section{ border-top-color:rgba(18,18,18,.16); }
+.warm .entry p, .warm .entry li{ color:rgba(18,18,18,.76); }
+.warm .chips li{ background:var(--light); border-color:rgba(18,18,18,.1); }
+.case.warm a.pill{ color:#fff; }
+.warm .site-header a{ color:var(--light); }
+
 .contact-detail{ margin-top:28px; font-size:14px; line-height:1.9; opacity:.75; }
 
 /* ---------- COLLECTIONS (requires .wrap.collections-grid in HTML) ---------- */
