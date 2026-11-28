@@ -226,6 +226,8 @@ body.warm{ background:var(--bg-warm); color:var(--ink); }
 .story .project-tag{ margin:0 0 6px; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
 .story .project p:last-child{ margin-bottom:0; }
 
+.project .pill{ margin-top:18px; }
+
 .contact-detail{ margin-top:28px; font-size:14px; line-height:1.9; opacity:.75; }
 
 /* ---------- COLLECTIONS (requires .wrap.collections-grid in HTML) ---------- */
