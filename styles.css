@@ -228,6 +228,12 @@ body.warm{ background:var(--bg-warm); color:var(--ink); }
 
 .project .pill{ margin-top:18px; }
 
+.chip-title{ margin:0 0 10px; font-size:13px; }
+.chips + .chip-title{ margin-top:20px; }
+.entry .cert-note{ margin:0; }
+.entry ul.certs{ columns:2 260px; column-gap:36px; }
+.certs li{ break-inside:avoid; }
+
 .contact-detail{ margin-top:28px; font-size:14px; line-height:1.9; opacity:.75; }
 
 /* ---------- COLLECTIONS (requires .wrap.collections-grid in HTML) ---------- */
