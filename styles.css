@@ -220,6 +220,12 @@ body.warm{ background:var(--bg-warm); color:var(--ink); }
 .story p{ margin:0 0 14px; }
 .story blockquote{ margin:22px 0; padding-left:18px; border-left:3px solid var(--ink); font-size:22px; line-height:1.45; letter-spacing:-.01em; }
 
+.project{ padding:22px 24px; border-radius:18px; background:var(--light); }
+.project + .project{ margin-top:16px; }
+.project h3{ margin:0 0 12px; font-size:18px; line-height:1.35; }
+.story .project-tag{ margin:0 0 6px; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+.story .project p:last-child{ margin-bottom:0; }
+
 .contact-detail{ margin-top:28px; font-size:14px; line-height:1.9; opacity:.75; }
 
 /* ---------- COLLECTIONS (requires .wrap.collections-grid in HTML) ---------- */
