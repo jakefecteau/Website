@@ -183,31 +183,6 @@ img{
 }
 .case .pill-light{ color: var(--light); }
 
-button.pill{ border-width:1px; font-family:inherit; cursor:pointer; }
-
-/* ---------- MORE INFO POP-UP ---------- */
-.more{
-  width:min(680px, 92vw);
-  max-height:85vh;
-  padding:0;
-  border:0;
-  border-radius:var(--radius);
-  background:var(--light);
-  color:var(--ink);
-  box-shadow:0 30px 80px rgba(0,0,0,.4);
-  overflow:hidden;
-}
-.more[open]{ display:flex; flex-direction:column; }
-.more::backdrop{ background:rgba(0,0,0,.6); }
-body:has(.more[open]){ overflow:hidden; }
-.more-head{ display:flex; justify-content:space-between; align-items:center; gap:16px; padding:20px 28px; border-bottom:1px solid rgba(18,18,18,.12); }
-.more-head h2{ margin:0; font-size:20px; letter-spacing:-.01em; }
-.more-close{ width:36px; height:36px; border:0; border-radius:50%; background:rgba(18,18,18,.08); color:var(--ink); font-size:22px; cursor:pointer; }
-.more-body{ overflow-y:auto; padding:4px 28px 28px; font-size:14px; line-height:1.75; }
-.more-body h3{ margin:22px 0 6px; font-size:15px; }
-.more-body p{ margin:0 0 10px; }
-.more-body ul{ margin:0; padding-left:18px; }
-
 /* ---------- RESUME + CONTACT ---------- */
 body.case{ display:flex; flex-direction:column; min-height:100vh; height:auto; }
 .resume{ flex:1; padding:56px 0 72px; }
@@ -240,6 +215,10 @@ body.warm{ background:var(--bg-warm); color:var(--ink); }
 .case.warm a.pill{ color:#fff; }
 .case.warm a.pill-outline{ color:var(--ink); }
 .warm .site-header a{ color:var(--light); }
+
+.story{ max-width:62ch; font-size:15px; line-height:1.8; }
+.story p{ margin:0 0 14px; }
+.story blockquote{ margin:22px 0; padding-left:18px; border-left:3px solid var(--ink); font-size:22px; line-height:1.45; letter-spacing:-.01em; }
 
 .contact-detail{ margin-top:28px; font-size:14px; line-height:1.9; opacity:.75; }
 
